@@ -3,7 +3,7 @@ const app = require('express')();
 const path = require('path');
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname + '/view/testing.html'));
+	res.sendFile(path.join(__dirname + '/src/views/testing.html'));
 });
 
 app.listen(3000, () => {
