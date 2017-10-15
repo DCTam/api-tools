@@ -1,9 +1,9 @@
 'use strict';
-const express = require('express');
-const app = express();
+const app = require('express')();
+const path = require('path');
 
 app.get('/', (req, res) => {
-	res.send('^_^');
+	res.sendFile(path.join(__dirname + '/view/testing.html'));
 });
 
 app.listen(3000, () => {
